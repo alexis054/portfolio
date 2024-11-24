@@ -6,10 +6,13 @@
     <title>Mi Portafolio</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <!-- Agregamos Google Fonts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Fondo de partículas -->
+    <div id="particles-js"></div>
 
     <!-- Cabecera -->
     <header class="header">
@@ -26,54 +29,54 @@
         </div>
     </header>
 
-    <!-- Sección de bienvenida con fondo animado -->
+    <!-- Sección de bienvenida -->
     <section class="hero">
         <div class="hero-text">
             <h2>Bienvenido a mi Portafolio</h2>
-            <p>Desarrollador, diseñador y creativo digital.</p>
+            <p>Desarrollador y diseñador con pasión por la innovación.</p>
         </div>
     </section>
 
     <!-- Sección sobre mí -->
     <section id="about" class="about">
         <h2>Sobre mí</h2>
-        <p>¡Hola! Soy un desarrollador apasionado por la programación, el diseño y la creación de experiencias digitales únicas. Siempre estoy buscando aprender algo nuevo y mejorar mis habilidades.</p>
+        <p>Soy un desarrollador apasionado por la tecnología, siempre buscando aprender nuevas herramientas y mejorar mis habilidades.</p>
     </section>
 
-    <!-- Sección de habilidades con animaciones -->
+    <!-- Sección de habilidades -->
     <section id="skills" class="skills">
         <h2>Mis Habilidades</h2>
         <div class="skills-container">
             <div class="skill-card">
                 <h3>HTML & CSS</h3>
-                <p>Diseño y desarrollo web responsivo.</p>
+                <p>Diseño web responsive, construcción de interfaces atractivas.</p>
             </div>
             <div class="skill-card">
                 <h3>JavaScript</h3>
-                <p>Interactividad avanzada para la web.</p>
+                <p>Programación de interactividad y funcionalidades avanzadas.</p>
             </div>
             <div class="skill-card">
                 <h3>React</h3>
-                <p>Framework para construir interfaces modernas.</p>
+                <p>Desarrollo de interfaces dinámicas y modernas.</p>
             </div>
         </div>
     </section>
 
-    <!-- Sección de proyectos con un slider -->
+    <!-- Sección de proyectos -->
     <section id="projects" class="projects">
         <h2>Mis Proyectos</h2>
-        <div class="slider">
-            <div class="slider-item">
+        <div class="projects-container">
+            <div class="project-card">
                 <img src="project1.jpg" alt="Proyecto 1">
-                <p>Proyecto 1: Desarrollo de una aplicación web.</p>
+                <p>Desarrollo de una aplicación web interactiva.</p>
             </div>
-            <div class="slider-item">
+            <div class="project-card">
                 <img src="project2.jpg" alt="Proyecto 2">
-                <p>Proyecto 2: Diseño de una interfaz de usuario.</p>
+                <p>Rediseño de una plataforma de e-commerce.</p>
             </div>
-            <div class="slider-item">
+            <div class="project-card">
                 <img src="project3.jpg" alt="Proyecto 3">
-                <p>Proyecto 3: Sistema de gestión de bases de datos.</p>
+                <p>Creación de un sistema de gestión de tareas.</p>
             </div>
         </div>
     </section>
@@ -81,7 +84,7 @@
     <!-- Sección de contacto -->
     <section id="contact" class="contact">
         <h2>Contacto</h2>
-        <p>¿Tienes alguna pregunta o deseas colaborar? ¡Contáctame!</p>
+        <p>Si deseas saber más o colaborar, ¡no dudes en ponerte en contacto!</p>
         <a href="mailto:miemail@dominio.com" class="contact-btn">Enviar un mensaje</a>
     </section>
 
@@ -98,5 +101,67 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0.1
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 40,
+                        "size_min": 0.1
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
