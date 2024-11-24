@@ -4,52 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Cargar el archivo de Particles.js -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluye la librería de particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Contenedor de partículas -->
-    <div id="particles-js"></div> 
 
-    <div id="content">
-        <header>
-            <h1>Mi Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Acerca de mí</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Fondo de partículas -->
+    <div id="particles-js"></div>
 
-        <section id="about">
-            <h2>Acerca de mí</h2>
-            <p>Descripción sobre ti...</p>
-        </section>
+    <!-- Sección de bienvenida -->
+    <section class="welcome">
+        <div class="content">
+            <h1>Hola, soy [Tu Nombre]</h1>
+            <p>Desarrollador Web y Programador</p>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2>Mis Proyectos</h2>
-            <div class="project">
-                <img src="proyecto1.jpg" alt="Proyecto 1">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto.</p>
-                <a href="https://github.com/tuusuario/proyecto1">Ver en GitHub</a>
+    <!-- Sección de habilidades -->
+    <section class="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Creación de sitios web con estructura semántica.</p>
             </div>
-            <!-- Repetir para más proyectos -->
-        </section>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Diseños responsivos y atractivos.</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Desarrollo de interactividad y funcionalidad.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Si deseas contactarme, puedes hacerlo a través de los siguientes medios:</p>
-            <a href="mailto:tuemail@example.com">Enviar Email</a>
-            <a href="https://wa.me/tuNumeroWhatsApp">Contactarme por WhatsApp</a>
-        </section>
-    </div>
+    <!-- Sección de proyectos -->
+    <section class="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Proyecto 1">
+                <p>Descripción del proyecto 1</p>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Proyecto 2">
+                <p>Descripción del proyecto 2</p>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Proyecto 3">
+                <p>Descripción del proyecto 3</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Cargar el archivo JavaScript para las partículas -->
+    <!-- Sección de contacto -->
+    <section class="contact">
+        <h2>Contáctame</h2>
+        <a href="mailto:tucorreo@ejemplo.com" class="contact-btn">Enviar mensaje</a>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+
+    <!-- Archivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
- 
