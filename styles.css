@@ -1,11 +1,14 @@
-/* Reset de estilos */
-* {
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    overflow-x: hidden;
+    color: white;
+    background: #121212;
 }
 
-/* Fondo interactivo de partículas */
+/* Fondo de partículas */
 #particles-js {
     position: absolute;
     top: 0;
@@ -15,87 +18,27 @@
     z-index: -1;
 }
 
-/* Fuentes y estilos generales */
-body {
-    font-family: 'Roboto', sans-serif;
-    background: #121212; /* Fondo oscuro */
-    color: #ffffff;
-}
-
-/* Cabecera */
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 15px 0;
-    z-index: 1000;
-}
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-.header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-}
-.header nav ul {
-    list-style: none;
-    display: flex;
-}
-.header nav ul li {
-    margin-left: 20px;
-}
-.header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-.header nav ul li a:hover {
-    color: #ff6f61;
-}
-
-/* Sección hero */
-.hero {
-    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+/* Sección de bienvenida */
+.welcome {
     text-align: center;
-    animation: fadeIn 2s ease-in-out;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333);
 }
-.hero-text h2 {
+.welcome h1 {
     font-size: 48px;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 10px;
+    margin: 0;
 }
-.hero-text p {
+.welcome p {
     font-size: 24px;
-}
-
-/* Sección de sobre mí */
-.about {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #1a1a1a;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    margin-top: -40px;
-    border-radius: 8px;
 }
 
 /* Sección de habilidades */
 .skills {
     background: #2c2c2c;
-    padding: 50px 20px;
-    text-align: center;
+    padding: 60px 20px;
 }
 .skills h2 {
+    text-align: center;
     margin-bottom: 30px;
     font-size: 32px;
 }
