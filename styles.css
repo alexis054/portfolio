@@ -6,19 +6,19 @@ body, html {
 }
 
 #particles-js {
-    position: fixed;
+    position: fixed; /* Asegura que las partículas estén fijas */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1; /* Las partículas deben estar por detrás del contenido */
 }
 
 #content {
     position: relative;
     z-index: 1;
     padding: 20px;
-    color: white; /* Para hacer el texto visible sobre el fondo */
+    color: white;
 }
 
 header {
