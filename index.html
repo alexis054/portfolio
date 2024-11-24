@@ -6,6 +6,7 @@
     <title>Mi Portafolio</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <!-- Incluye la librería de particles.js -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -14,154 +15,69 @@
     <!-- Fondo de partículas -->
     <div id="particles-js"></div>
 
-    <!-- Cabecera -->
-    <header class="header">
-        <div class="header-content">
-            <h1>Mi Portafolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre mí</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <!-- Sección de bienvenida -->
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Bienvenido a mi Portafolio</h2>
-            <p>Desarrollador y diseñador con pasión por la innovación.</p>
+    <section class="welcome">
+        <div class="content">
+            <h1>Hola, soy [Tu Nombre]</h1>
+            <p>Desarrollador Web y Programador</p>
         </div>
-    </section>
-
-    <!-- Sección sobre mí -->
-    <section id="about" class="about">
-        <h2>Sobre mí</h2>
-        <p>Soy un desarrollador apasionado por la tecnología, siempre buscando aprender nuevas herramientas y mejorar mis habilidades.</p>
     </section>
 
     <!-- Sección de habilidades -->
-    <section id="skills" class="skills">
-        <h2>Mis Habilidades</h2>
+    <section class="skills">
+        <h2>Habilidades</h2>
         <div class="skills-container">
             <div class="skill-card">
-                <h3>HTML & CSS</h3>
-                <p>Diseño web responsive, construcción de interfaces atractivas.</p>
+                <h3>HTML</h3>
+                <p>Creación de sitios web con estructura semántica.</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Diseños responsivos y atractivos.</p>
             </div>
             <div class="skill-card">
                 <h3>JavaScript</h3>
-                <p>Programación de interactividad y funcionalidades avanzadas.</p>
-            </div>
-            <div class="skill-card">
-                <h3>React</h3>
-                <p>Desarrollo de interfaces dinámicas y modernas.</p>
+                <p>Desarrollo de interactividad y funcionalidad.</p>
             </div>
         </div>
     </section>
 
     <!-- Sección de proyectos -->
-    <section id="projects" class="projects">
-        <h2>Mis Proyectos</h2>
+    <section class="projects">
+        <h2>Proyectos</h2>
         <div class="projects-container">
             <div class="project-card">
                 <img src="project1.jpg" alt="Proyecto 1">
-                <p>Desarrollo de una aplicación web interactiva.</p>
+                <p>Descripción del proyecto 1</p>
             </div>
             <div class="project-card">
                 <img src="project2.jpg" alt="Proyecto 2">
-                <p>Rediseño de una plataforma de e-commerce.</p>
+                <p>Descripción del proyecto 2</p>
             </div>
             <div class="project-card">
                 <img src="project3.jpg" alt="Proyecto 3">
-                <p>Creación de un sistema de gestión de tareas.</p>
+                <p>Descripción del proyecto 3</p>
             </div>
         </div>
     </section>
 
     <!-- Sección de contacto -->
-    <section id="contact" class="contact">
-        <h2>Contacto</h2>
-        <p>Si deseas saber más o colaborar, ¡no dudes en ponerte en contacto!</p>
-        <a href="mailto:miemail@dominio.com" class="contact-btn">Enviar un mensaje</a>
+    <section class="contact">
+        <h2>Contáctame</h2>
+        <a href="mailto:tucorreo@ejemplo.com" class="contact-btn">Enviar mensaje</a>
     </section>
 
     <!-- Pie de página -->
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
-            <div class="social-icons">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-                <a href="#"><img src="github-icon.png" alt="GitHub"></a>
-            </div>
+        <p>© 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
         </div>
     </footer>
 
+    <!-- Archivo JavaScript -->
     <script src="script.js"></script>
-    <script>
-        particlesJS('particles-js', {
-            "particles": {
-                "number": {
-                    "value": 80,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                        "enable": true,
-                        "speed": 1,
-                        "opacity_min": 0.1
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": true,
-                        "speed": 40,
-                        "size_min": 0.1
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 6,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            }
-        });
-    </script>
 </body>
 </html>
