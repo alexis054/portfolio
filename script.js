@@ -1,28 +1,60 @@
-// Animación GSAP
-gsap.from(".hero h1", { duration: 1, y: -50, opacity: 0 });
-gsap.from(".hero p", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
-gsap.from(".hero .btn", { duration: 1, scale: 0.5, opacity: 0, delay: 1 });
-
-// Gráfico de habilidades (Chart.js)
-const ctx = document.getElementById('skillsChart').getContext('2d');
-new Chart(ctx, {
-    type: 'radar',
-    data: {
-        labels: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'],
-        datasets: [{
-            label: 'Habilidades',
-            data: [90, 85, 80, 75, 70],
-            backgroundColor: 'rgba(255, 105, 97, 0.2)',
-            borderColor: '#ff6f61',
-            borderWidth: 2
-        }]
-    },
-    options: {
-        responsive: true,
-        scale: {
-            ticks: {
-                beginAtZero: true,
-                max: 100
+// Configuración de particles.js
+particlesJS('particles-js', {
+    "particles": {
+        "number": {
+            "value": 80,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            }
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": true,
+                "speed": 1,
+                "opacity_min": 0.1
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 40,
+                "size_min": 0.1
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
             }
         }
     }
