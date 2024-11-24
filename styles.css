@@ -1,67 +1,143 @@
-body, html {
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    color: white;
+    background: #121212;
 }
 
+/* Fondo de partículas */
 #particles-js {
-    position: fixed; /* Asegura que las partículas estén fijas */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Las partículas deben estar por detrás del contenido */
+    z-index: -1;
 }
 
-#content {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-    color: white;
-}
-
-header {
+/* Sección de bienvenida */
+.welcome {
     text-align: center;
-    padding: 50px;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+}
+.welcome h1 {
+    font-size: 48px;
+    margin: 0;
+}
+.welcome p {
+    font-size: 24px;
 }
 
-h1 {
-    font-size: 3em;
+/* Sección de habilidades */
+.skills {
+    background: #2c2c2c;
+    padding: 60px 20px;
+}
+.skills h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.skill-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.skill-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.skill-card p {
+    font-size: 16px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Sección de proyectos */
+.projects {
+    background: #1e1e1e;
+    padding: 60px 20px;
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
 }
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
 }
-
-section {
-    padding: 50px 0;
+.project-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-
-.project {
-    margin: 20px 0;
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
-
-.project img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    display: block;
+.project-card p {
+    text-align: center;
     margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Sección de contacto */
+.contact {
+    background: #1a1a1a;
+    padding: 60px 20px;
+    text-align: center;
+}
+.contact-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.contact-btn:hover {
+    background-color: #e55f4e;
+}
+
+/* Pie de página */
+footer {
+    background: #121212;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+footer .social-icons {
+    margin-top: 10px;
+}
+footer .social-icons a {
+    margin: 0 15px;
+}
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Animación de fadeIn */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
