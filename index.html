@@ -3,88 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio profesional de [Tu Nombre]. Descubre mis proyectos, habilidades y cómo contactarme.">
-    <meta property="og:title" content="Portafolio de [Tu Nombre]">
-    <meta property="og:description" content="Explora mis proyectos y habilidades.">
-    <meta property="og:image" content="ruta-a-tu-imagen.png">
-    <meta property="og:url" content="https://tuportafolio.com">
+    <title>Mi Portafolio</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script defer src="script.js"></script>
-    <title>Portafolio de [Tu Nombre]</title>
+    <!-- Agregamos Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo" aria-label="Inicio">Mi Portafolio</div>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Mi Portafolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" role="banner">
-            <h1>Hola, soy <span class="highlight">[Tu Nombre]</span></h1>
-            <p>Desarrollador Web | Ingeniero | Creativo</p>
-            <a href="#projects" class="btn">Explora mis proyectos</a>
-        </section>
+    <!-- Sección de bienvenida con fondo animado -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Bienvenido a mi Portafolio</h2>
+            <p>Desarrollador, diseñador y creativo digital.</p>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <h2>Sobre Mí</h2>
-            <p>Soy un apasionado del desarrollo web con experiencia en creación de soluciones interactivas que combinan creatividad y tecnología.</p>
-        </section>
+    <!-- Sección sobre mí -->
+    <section id="about" class="about">
+        <h2>Sobre mí</h2>
+        <p>¡Hola! Soy un desarrollador apasionado por la programación, el diseño y la creación de experiencias digitales únicas. Siempre estoy buscando aprender algo nuevo y mejorar mis habilidades.</p>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <h2>Habilidades</h2>
-            <canvas id="skillsChart" aria-label="Gráfico de habilidades" role="img"></canvas>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <h2>Proyectos</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Proyecto 1</h3>
-                    <p>Descripción breve del proyecto.</p>
-                    <a href="#">Ver más</a>
-                </div>
-                <div class="project-card">
-                    <h3>Proyecto 2</h3>
-                    <p>Descripción breve del proyecto.</p>
-                    <a href="#">Ver más</a>
-                </div>
-                <div class="project-card">
-                    <h3>Proyecto 3</h3>
-                    <p>Descripción breve del proyecto.</p>
-                    <a href="#">Ver más</a>
-                </div>
+    <!-- Sección de habilidades con animaciones -->
+    <section id="skills" class="skills">
+        <h2>Mis Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>HTML & CSS</h3>
+                <p>Diseño y desarrollo web responsivo.</p>
             </div>
-        </section>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Interactividad avanzada para la web.</p>
+            </div>
+            <div class="skill-card">
+                <h3>React</h3>
+                <p>Framework para construir interfaces modernas.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2>Contacto</h2>
-            <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo" required>
-                <textarea placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+    <!-- Sección de proyectos con un slider -->
+    <section id="projects" class="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="slider">
+            <div class="slider-item">
+                <img src="project1.jpg" alt="Proyecto 1">
+                <p>Proyecto 1: Desarrollo de una aplicación web.</p>
+            </div>
+            <div class="slider-item">
+                <img src="project2.jpg" alt="Proyecto 2">
+                <p>Proyecto 2: Diseño de una interfaz de usuario.</p>
+            </div>
+            <div class="slider-item">
+                <img src="project3.jpg" alt="Proyecto 3">
+                <p>Proyecto 3: Sistema de gestión de bases de datos.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Sección de contacto -->
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o deseas colaborar? ¡Contáctame!</p>
+        <a href="mailto:miemail@dominio.com" class="contact-btn">Enviar un mensaje</a>
+    </section>
+
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
