@@ -1,4 +1,4 @@
-    <script>
+ 
         particlesJS('particles-js', {
             "particles": {
                 "number": {
@@ -59,4 +59,3 @@
                 }
             }
         });
-    </script>
