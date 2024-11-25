@@ -1,5 +1,5 @@
 // Configuración de particles.js
-particlesJS('particles-js', {
+/*particlesJS('particles-js', {
     "particles": {
         "number": {
             "value": 80,
@@ -55,7 +55,7 @@ particlesJS('particles-js', {
                 "enable": false,
                 "rotateX": 600,
                 "rotateY": 1200
-            }
+            }*/
         }
     }
 });
